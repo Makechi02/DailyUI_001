@@ -1,0 +1,143 @@
+
+:root {
+	--accent: #002347;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #dedede;
+}
+
+.landing {
+	height: 80%;
+	width: 60%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 1em;
+	background: #fff;
+}
+
+.logo {
+	position: absolute;
+	bottom: 12%;
+	text-transform: uppercase;
+	letter-spacing: .5em;
+	z-index: 1;
+}
+
+.welcome {
+	position: relative;
+	height: 100%;
+	width: 40%;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: var(--accent);
+	color: #fff;
+	border-radius: 1em 0 0 1em;
+	transition: all .5s;
+}
+
+.welcome button {
+	border: 2px solid #fff;
+}
+
+.welcome h2 {
+	color: #fff;
+}
+
+.create {
+	position: relative;
+	height: 100%;
+	width: 60%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	transition: all .5s;
+}
+
+.create .icons {
+	margin: 20px 5px;
+	display: flex;
+	gap: 10px;
+}
+
+.create .icons i {
+	height: 50px;
+	width: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	border: 2px solid #000;
+	border-radius: 50%;;
+}
+
+.create form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+	margin: 20px 0;
+}
+
+.create form input {
+	width: 65%;
+	height: 45px;
+	outline: none;
+	border: none;
+	background-color: #dedede;
+	padding: 10px;
+}
+
+h2 {
+	color: var(--accent);
+	font-size: 2em;
+	text-transform: uppercase;
+}
+
+p {
+	font-size: .8em;
+	margin: 7px 0;
+}
+
+button {
+	margin: 15px 0;
+	padding: 15px 35px;
+	letter-spacing: .4em;
+	font-weight: 400;
+	text-transform: uppercase;
+	background-color: var(--accent);
+	outline: none;
+	border: 0;
+	border-radius: 20px;
+	transition: .5s;
+}
+
+button:hover {
+	letter-spacing: .6em;
+}
+
+.moveLeft {
+	left: 60%;
+	border-radius: 0 1em 1em 0;
+}
+
+.moveRight {
+	right: 40%;
+}
